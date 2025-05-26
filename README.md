@@ -10,6 +10,10 @@
 
   - 注: 答辩评委会检查论文格式，请确保你的论文符合学校要求。
 
+## 模板预览
+
+见[预览文件](./preview.pdf)
+
 ## 目录结构（主要文件说明）
 
 - `main.tex`：主控文件，包含各章节与模块的引用。
@@ -17,28 +21,30 @@
 - `Text/Abstract.tex`：中英文摘要模板。
 - `Text/Chapter_1.tex` 等：正文各章节内容。
 - `Text/Reference.tex`、`Text/reference.bib`：参考文献及其数据库。
+- `Text/titlepage-define.tex`：自定义封面相关命令。
+- `Text/Titlepage.tex`：封面内容与布局。(deprecated)
 - `TemplateAssets/`：图片与学校相关素材。
 - 字体文件（`simfang.ttf`、`simhei.ttf`、`simkai.ttf`、`simsun.ttc`）：确保跨平台一致性。
 
 ## 使用说明
 
-1. **编译方式**  
-   推荐使用 XeLaTeX 进行编译，支持中文和自定义字体。完整编译流程如下：
-
-   ```sh
-   xelatex main.tex
-   biber main
-   xelatex main.tex
-   xelatex main.tex
-   ```
-
-   或在 Overleaf 上直接编译（选择 XeLaTeX）。
-
+1. **编译方式**: 推荐使用 XeLaTeX 进行编译，支持中文和自定义字体。或在 Overleaf 上直接编译（选择 XeLaTeX）。
 2. **格式规范**
    - 模板已按福州大学本科毕业论文格式要求设置页边距、字体、字号、行距、章节编号、目录、参考文献等。
    - 公式、图表、定义等均支持自动编号与交叉引用。
-
-3. **其他**
+3. 关于封面
+   - 使用 `main.tex` 文件中定义的变量来填充封面信息。这些变量包括：
+     - `\\title{本科生毕业设计（论文）}`：论文的主标题，可以根据实际情况修改，例如 "本科生毕业论文（文献综述 / 外文原文及翻译...等）"。
+     - `\\contenttitle{福州大学本科生毕业论文}`：内容标题，通常保持不变。
+     - `\\contenttitleSecond{\\LaTeX 模板}`：第二行内容标题，可以留空。
+     - `\\author{亦瑾}`：作者姓名。
+     - `\\institute{计算机与大数据学院}`：学院名称。
+     - `\\major{计算机科学与技术}`：专业名称。
+     - `\\date{110年3月7日}`：日期，可以修改为终稿提交日期。
+   - 签名图片：由于签名图片暂时无法配置为变量，请直接在 `Text/titlepage-define.tex` 文件中修改。
+   - 封面不保证与word版完全一致, 图片相对位置存在一定偏差(尽力了QAQ)
+     如果担心出问题, 请直接使用学校提供的word版封面, 转为pdf后插入使用`\includepdf[pages={1}]{Text/封面文件.pdf}`插入到文档。
+4. **其他**
    - 如果编译过慢, 可以尝试使用工具将图片转为pdf格式, 以加快编译速度。
 
 ## 致谢
