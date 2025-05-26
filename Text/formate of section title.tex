@@ -1,0 +1,30 @@
+\ctexset{
+    % 大标题
+    section={
+        format+=\zihao{-2}\hei \centering,
+        name={第,章\ },
+        % number=\chinese{section}, % 中文大标题编号
+        number = \arabic{section}, % 阿拉伯数字大标题编号
+        beforeskip=1.0ex plus 0.2ex minus .2ex,
+        afterskip=30pt, % 大标题段后间距30-36pt
+        aftername=\hspace{0pt}
+        },
+    % 一级节标题
+    subsection={
+        format+=\zihao{3}\hei \raggedright,
+        name={,\ },
+        number=\thesection{}.\arabic{subsection},
+        beforeskip=1.0ex plus 0.2ex minus .2ex,
+        afterskip=18pt, % 一级节标题段后间距18-24pt
+        aftername=\hspace{0pt}
+        },
+    % 二级节标题
+    subsubsection={
+        format+=\zihao{-3}\hei \raggedright,
+        name={,\ },
+        number=\thesubsection{}.\arabic{subsubsection},
+        beforeskip=1.0ex plus 0.2ex minus .2ex,
+        afterskip=12pt, % 二级节标题段后间距12-15pt
+        aftername=\hspace{0pt}
+        },
+    }

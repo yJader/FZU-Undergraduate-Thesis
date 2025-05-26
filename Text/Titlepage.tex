@@ -1,0 +1,86 @@
+\pagestyle{empty}{\fancyhf{}}
+\begin{titlepage}
+
+    % 复制word的图片, 尽管测量了距离, 还是有一点误差
+    % \begin{textblock*}{\textwidth}(\dimexpr (\paperwidth - \textwidth) / 2 \relax, 3.85cm) %距离页面顶部距离3.85cm
+    %     \begin{figure}[H]
+    %         \centering
+    %         \includegraphics[height=2.25cm, keepaspectratio]{TemplateAssets/fzu1.png}
+    %         \hspace{0.55cm}
+    %         \includegraphics[height=2.25cm, keepaspectratio]{TemplateAssets/fzu2.png}
+    %         \hspace{0.55cm}
+    %         \includegraphics[height=2.25cm, keepaspectratio]{TemplateAssets/fzu3.png}
+    %         \hspace{0.74cm}
+    %         \includegraphics[height=2.25cm, keepaspectratio]{TemplateAssets/fzu4.png}
+    %     \end{figure}
+    % \end{textblock*}
+
+    % 矢量图版本, 使用校徽的矢量图, 对每个字添加了等高且等距的轮廓后, 放大到word封面相同高度
+    % 但是发现学校下发的word封面可能并没有严格等距...
+    \begin{textblock*}{\textwidth}(\dimexpr (\paperwidth - \textwidth) / 2 \relax, 4.10cm) %距离页面顶部距离4.10cm
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=1.85cm, keepaspectratio]{TemplateAssets/fzu1.pdf}
+            \hspace{0.56cm}
+            \includegraphics[height=1.85cm, keepaspectratio]{TemplateAssets/fzu2.pdf}
+            \hspace{0.56cm}
+            \includegraphics[height=1.85cm, keepaspectratio]{TemplateAssets/fzu3.pdf}
+            \hspace{0.56cm}
+            \includegraphics[height=1.85cm, keepaspectratio]{TemplateAssets/fzu4.pdf}
+        \end{figure}
+    \end{textblock*}
+
+    \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}} % 水平居中的m列
+    \newcolumntype{B}[1]{>{\centering\arraybackslash}b{#1}} % 水平居中的b列
+
+    \begin{textblock*}{\textwidth}(\dimexpr (\paperwidth - \textwidth) / 2 \relax, 8.08cm) %距离页面顶部距离8cm
+        \begin{center}
+            %中文题目：宋体1号字
+            % \linespread{1.5}\selectfont %设置行距
+            \tbf \yihao \hspace{1.2cm}本科生毕业设计（论文）
+        \end{center}
+    \end{textblock*}
+
+    \begin{textblock*}{\textwidth}(\dimexpr (\paperwidth - \textwidth) / 2 \relax, 10.6cm)
+        {
+                %学科专业等：宋体3号字
+                \song \sanhao
+                \setlength{\tabcolsep}{0.12cm} %表格列间距
+
+                \begin{center}
+                    % \linespread{1}\selectfont %单倍行距
+                    \begin{tabular}[b]{B{3cm} B{9.18cm}}
+                        {题\hspace{1.1cm}目：} & {}   \\\Xcline{2-2}{1pt}       \\[0.24cm]  % 空白行(这个略窄)
+                        {}                  & {}   \\  \Xcline{2-2}{1pt}                   \\[0.24cm]  % 空白行
+                        {姓\hspace{1.1cm}名：} & {张三} \\\Xcline{2-2}{1pt}    \\[0.45cm]  % 空白行
+                        {学\hspace{1.1cm}号：} & {学号} \\\Xcline{2-2}{1pt}    \\[0.45cm]  % 空白行
+                        {学\hspace{1.1cm}院：} & {学院} \\\Xcline{2-2}{1pt}    \\[0.45cm]  % 空白行
+                        {专\hspace{1.1cm}业：} & {专业} \\\Xcline{2-2}{1pt}    \\[0.45cm]  % 空白行
+                        {年\hspace{1.1cm}级：} & {年级} \\\Xcline{2-2}{1pt}    \\[0.45cm]
+                    \end{tabular}
+
+                    \vspace{-0.17cm} % 对齐用
+
+                    \begin{tabular}[b]{B{4.1cm} B{6.03cm} B{2cm}}
+                        {校内指导教师：} &
+                        % 在这里插入校内导师签名图片
+                        % 替换为你的签名图片, e.g., Fig/signature_internal.png
+                        \raisebox{-0.3\height}{\includegraphics[height=0.8cm, keepaspectratio]{example-image}}
+                                  & {（签名）} \\\Xcline{2-2}{1pt}\\[0.45cm]  % 空白行
+                        {校外指导教师：} &
+                        % 在这里插入校外导师签名图片, 如没有, 可以注释该行
+                        % 替换为你的签名图片, e.g., Fig/signature_external.png
+                        % \raisebox{-0.3\height}{\includegraphics[height=0.8cm, keepaspectratio]{example-image}} 
+                                  & {（签名）} \\\Xcline{2-2}{1pt} \\[0.45cm]  % 空白行
+                    \end{tabular}
+
+                \end{center}
+
+                \begin{center}
+                    \song \sanhao
+                    \hspace{8em}2048年2月30日
+                \end{center}
+            }\end{textblock*}
+    \ % 如果没有内容, newpage不会生效(因为textblock是覆盖原内容)
+\end{titlepage}
+\newpage

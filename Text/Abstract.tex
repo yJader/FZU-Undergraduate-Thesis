@@ -1,0 +1,80 @@
+%-------------------设置页眉页脚---------------------
+\pagenumbering{Roman}
+\pagestyle{plain}{%
+    \fancyhf{} % clear all header and footer fields
+    % \fancyhead[CE]{\song \wuhao 福州大学博士学位论文} %偶数页
+    % \fancyhead[CO]{\song \wuhao 基于在线评论信息的多属性决策方法研究} %奇数页
+    \fancyfoot[C]{\thepage}%设置页脚
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}}
+
+%---------------------摘要----------------------------
+%中文论文题目：黑体小2，居中，段前17磅，段后30磅，行距20磅
+\vspace{17pt}
+\begin{center}
+    {\heitib \xiaoerhao
+        \setlength{\baselineskip}{20pt}
+        福州大学本科生毕业论文\LaTeX 模版
+    }
+    \vspace{30pt}
+\end{center}
+
+%摘要标题：居中，4号黑体，段前0行，段后12磅，行距20磅
+\begin{center}
+    {\heitib \sihao 摘~要}
+    \vspace{12pt}
+\end{center}
+
+%摘要正文：宋体小四，段前0行，段后0行，行距20磅，首行缩进2字符
+\addcontentsline{toc}{section}{摘~要}
+\songti \xiaosihao
+\setlength{\baselineskip}{20pt}
+
+本模版是基于\href{https://www.overleaf.com/latex/templates/fu-zhou-da-xue-yan-jiu-sheng-bi-ye-lun-wen-mo-ban/pdccsztcptxy}{Shifan He的《福州大学研究生毕业论文模版》}修改而来，感谢分享！
+
+本模版假定用户已经能处理一般的\LaTeX 文档，并对其相关知识有一定了解。如果从未接触\LaTeX，建议先学习相关的基础知识。
+
+遵守学术行为规范承诺(即statement每届可能会有不同，请参考当年的毕业论文手册)
+
+如与现行的《福州大学学位论文格式要求与规范》不同，以当年发布的《规范》为准。
+
+非官方文档，如有不妥，请指教，欢迎交流学习。
+
+\begin{itemize}
+    \item 当前版本正在改进, 如果你希望参与到修改中, 请联系yjader@foxmail.com
+    \item 感谢Xiuqi Cui对模板样式修改给出的建议
+\end{itemize}
+
+%摘要正文后，中间空一行，另起一行写关键词。
+%顶格，小4号黑体，不加粗，中间用逗号（中文）分开，词尾不写标点
+\noindent{\heiti \xiaosihao 关键词：关键词1，关键词2，关键词2}
+
+%----------------------英文摘要-------------------------
+%英文论文题目：小3 Arial Black，不加粗，居中，段前17磅，段后30磅，行距20磅
+\newpage
+\begin{center}
+    \vspace{17pt}
+    {\setmainfont{Arial Black} \xiaosanhao Title of your thesis}
+    \vspace{30pt}
+\end{center}
+
+%摘要：4号Arial Black，不加粗，居中，段前0行，段后12磅，行距20磅
+\begin{center}
+    {\setmainfont{Arial Black} \sihao Abstract}
+    \vspace{12pt}
+\end{center}
+
+\addcontentsline{toc}{section}{{\large Abstract}}
+
+%英文摘要正文，小4 Times New Roman，段前0行，段后0行，行距20磅，首行缩进4个英文字母。
+\setmainfont{Times New Roman} \xiaosihao
+\setlength{\baselineskip}{20pt}
+
+Contents
+
+%英文关键词，中间空一行，另起一行写“key words”。小4 Arial Black，段前0行，段后0行，行距20磅。关键词之间用逗号（英文）隔开，逗号后点击空格键（英文）一次，在写下一个。最后的词尾关键词不写标点。
+%在英文关键词中，除人名、地名的首字母，以及简缩写字母要大写外，其余单词的首字母一律小写
+\noindent{\setmainfont{Arial Black} \xiaosihao Key words: Online reviews, Heterogeneous information}
+%\setmainfont{Times New Roman} 
+\newpage
+

@@ -1,0 +1,17 @@
+%-----------------------目录---------------------------
+%目录标题：小2黑体不加粗，居中，段前17磅，段后30磅，行距20磅
+%目录二字之间空1个汉字的空格
+
+
+
+\pagestyle{fancyplain} %设置目录页无页码
+\fancyhf{}  %设置目录页无页码
+\renewcommand\headrulewidth{0pt} %去掉上面的那条线
+\pagenumbering{arabic} %将目录页设置为阿拉伯数字
+\begin{center}
+\tableofcontents  
+\end{center}
+\setcounter{page}{0}%正文为第一页
+\pagestyle{empty} %本页的页脚为空，\thispagestyle{empty}
+
+\newpage

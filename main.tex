@@ -1,0 +1,42 @@
+%-------------------------------------------------------%
+%-                  LaTeX Template                     -%
+%-           FZU Undergraduate Thesis                  -%
+%-              亦瑾                                    -%
+%-          yjader@foxmail.com                         -%
+%-------------------------------------------------------%
+
+% \documentclass[twoside]{ctexart} % 双面打印
+\documentclass[oneside]{ctexart} % 单面打印
+
+%--------------------预定义--------------------
+\input{Text/pre-defined}
+%--------------------文章主体--------------------
+\begin{document}
+\raggedbottom %让页面上对齐width=
+%--------------------封面页--------------------
+\input{Text/Titlepage}
+
+%--------------------声明页--------------------
+% 将学校的word编辑后保存为pdf, 上传到Text (暂未找到直接插入word页面的方式)
+% \includepdf[pages={1}]{Text/9.福州大学本科生毕业设计（论文）诚信承诺书.pdf}
+
+%--------------------摘要页--------------------
+\input{Text/Abstract}
+
+%--------------------目录页--------------------
+\input{Text/Table of contents}
+
+%--------------------章节--------------------
+\input{Text/formate of section title}
+\input{Text/Chapter_1}
+\input{Text/Chapter_2}
+\input{Text/Chapter_3}
+
+%--------------------参考文献--------------------
+
+\input{Text/Reference}
+
+%--------------------致谢页--------------------
+\input{Text/Acknowledgement}
+
+\end{document}
