@@ -40,12 +40,12 @@
 % 论文尺寸规格为A4(210×297mm)。每一面的上方（天头）和左侧（订口）应分别留边25mm，下方（地脚）和右侧（切口）应分别留边20mm。
 \geometry{
   a4paper,
-  left=20mm,
+  left=25mm,
   right=20mm,
   top=25mm,
   bottom=20mm,
-  bindingoffset=5mm,
   % showframe,         % 保持开启以观察页面效果
+  asymmetric         % 关键：强制所有页边距一致，不镜像
 }
 %论文尺寸为A4，全文页面设置为：上下2.54cm，左右3.17cm，含有大量图表可微调。页边距0.5cm
 % \geometry{a4paper,left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm,bindingoffset=0.5cm} 
@@ -64,7 +64,7 @@
 \setCJKfamilyfont{hei}{simhei.ttf}
 
 \newcommand{\song}{\CJKfamily{song}}    % 宋体   (simsun.ttc)
-\newcommand{\fs}{\CJKfamily{fs}}        %仿宋体  (simfs.ttf)
+\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体  (simfs.ttf)
 \newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (simkai.ttf)
 \newcommand{\hei}{\CJKfamily{hei}}      % 黑体   (simhei.ttf)
 
@@ -213,3 +213,6 @@
 % 我们将其格式化为 "公式 (#1)"
 \def\tagform@#1{\maketag@@@{\text{公式 }（#1）\@@italiccorr}}
 \makeatother
+
+
+\input{Text/titlepage-define} % 自定义封面命令

@@ -5,16 +5,27 @@
 %-                yjader@foxmail.com                   -%
 %-------------------------------------------------------%
 
-% \documentclass[twoside]{ctexart} % 双面打印
-\documentclass[oneside]{ctexart} % 单面打印
+\documentclass[twoside]{ctexart}
 
 %--------------------预定义--------------------
 \input{Text/pre-defined}
+
+\title{本科生毕业设计（论文）} % 可以修改为 "本科生毕业论文（文献综述 / 外文原文及翻译...等）"
+\contenttitle{福州大学本科生毕业论文}
+\contenttitleSecond{\LaTeX 模板} % 第二行标题, 可以留空
+\author{亦瑾}
+\institute{计算机与大数据学院}
+\major{计算机科学与技术}
+% \studentid{00000000}
+\date{110年3月7日} % 日期可以修改为实际日期
+
+
 %--------------------文章主体--------------------
 \begin{document}
 \raggedbottom %让页面上对齐width=
 %--------------------封面页--------------------
-\input{Text/Titlepage}
+% \input{Text/Titlepage}
+\maketitle
 
 %--------------------声明页--------------------
 % 将学校的word编辑后保存为pdf, 上传到Text (暂未找到直接插入word页面的方式)

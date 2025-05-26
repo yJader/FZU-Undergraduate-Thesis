@@ -38,6 +38,9 @@
    - 模板已按福州大学本科毕业论文格式要求设置页边距、字体、字号、行距、章节编号、目录、参考文献等。
    - 公式、图表、定义等均支持自动编号与交叉引用。
 
+3. **其他**
+   - 如果编译过慢, 可以尝试使用工具将图片转为pdf格式, 以加快编译速度。
+
 ## 致谢
 
 本模板基于 [Shifan He 的福州大学研究生毕业论文模板](https://www.overleaf.com/latex/templates/fu-zhou-da-xue-yan-jiu-sheng-bi-ye-lun-wen-mo-ban/pdccsztcptxy) 修改，感谢学长的贡献。  
